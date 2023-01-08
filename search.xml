@@ -4,24 +4,11 @@
   
     
     <entry>
-      <title>牛牛第二篇文章</title>
-      <link href="/2022/12/04/%E7%89%9B%E7%89%9B%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/"/>
-      <url>/2022/12/04/%E7%89%9B%E7%89%9B%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>开始了</title>
+      <title>想做一个自己的博客</title>
       <link href="/2022/12/04/2022-12-4-%E5%BC%80%E5%A7%8B/"/>
       <url>/2022/12/04/2022-12-4-%E5%BC%80%E5%A7%8B/</url>
       
-        <content type="html"><![CDATA[<p>##开始了！！！！！！！！</p>]]></content>
+        <content type="html"><![CDATA[<p>本人对计算机是真的很喜欢，但缺少实践和勇气很少去尝试导致没能做出自己喜欢的东西自己想要的东西。不过从这个博客开始我要打破这个循环！加油！为自己喜欢的。</p>]]></content>
       
       
       
@@ -30,23 +17,23 @@
     
   
   
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/yituliu.css"/>
+      <url>/css/yituliu.css</url>
+      
+        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;  }  #page-header {    background: transparent !important;  }  /* 白天模式遮罩透明 */  #footer::before {    background: transparent !important;  }  #page-header::before {    background: transparent !important;  }  /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }]]></content>
+      
+    </entry>
+    
     
     
     <entry>
       <title>关于</title>
       <link href="/heart/index.html"/>
       <url>/heart/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -66,9 +53,9 @@
     
     
     <entry>
-      <title>link</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -77,11 +64,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/yituliu.css"/>
-      <url>/css/yituliu.css</url>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
-        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;  }  #page-header {    background: transparent !important;  }  /* 白天模式遮罩透明 */  #footer::before {    background: transparent !important;  }  #page-header::before {    background: transparent !important;  }  /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     

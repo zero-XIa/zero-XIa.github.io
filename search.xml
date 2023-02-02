@@ -4,13 +4,50 @@
   
     
     <entry>
-      <title>想做一个自己的博客</title>
-      <link href="/2022/12/04/2022-12-4-%E5%BC%80%E5%A7%8B/"/>
-      <url>/2022/12/04/2022-12-4-%E5%BC%80%E5%A7%8B/</url>
+      <title>markdown学习</title>
+      <link href="/posts/4fb3979d.html"/>
+      <url>/posts/4fb3979d.html</url>
       
-        <content type="html"><![CDATA[<p>本人对计算机是真的很喜欢，但缺少实践和勇气很少去尝试导致没能做出自己喜欢的东西自己想要的东西。不过从这个博客开始我要打破这个循环！加油！为自己喜欢的。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>使用#号标记，可以表示1-6级标题， 随#的个数递增，一级标题字号最大，六级标题字号最小。</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br><span class="line"><span class="section">## 二级标题</span></span><br><span class="line"><span class="section">### 三级标题</span></span><br><span class="line"><span class="section">#### 四级标题</span></span><br><span class="line"><span class="section">##### 五级标题</span></span><br><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure><h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><table><thead><tr><th><code>*这是斜体*</code></th><th><em>这是斜体</em></th></tr></thead><tbody><tr><td><code>_这是斜体_</code></td><td><em>这是斜体</em></td></tr><tr><td><code>**这是粗体**</code></td><td><strong>这是粗体</strong></td></tr><tr><td><code>__这是粗体__</code></td><td><strong>这是粗体</strong></td></tr><tr><td><code>***这是粗斜体***</code></td><td><em><strong>这是粗斜体</strong></em></td></tr><tr><td><code>___这是粗斜体___</code></td><td><em><strong>这是粗斜体</strong></em></td></tr></tbody></table><h2 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h2><p>Markdown换行的方式有很多种:</p><ul><li>直接在一句话后敲两个空格</li><li>两句话之间加一个空行</li><li>如果你在编辑的时候，想让一行文字在显示的时候换行，就在中间加<code>&lt;br/&gt;</code></li></ul><h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;这是一个引用：</span><br><span class="line">&gt;&gt;这是一个引用的引用</span><br><span class="line">&gt;&gt;&gt;这是一个引用的引用的引用</span><br></pre></td></tr></table></figure><p>效果：</p><blockquote><p>引用1</p><blockquote><p>引用2</p><blockquote><p>引用3</p></blockquote></blockquote></blockquote><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">链接名称</span>](<span class="link">链接地址</span>)</span><br><span class="line">&lt;链接地址&gt;</span><br><span class="line">即是：</span><br><span class="line">[<span class="string">百度</span>](<span class="link">https://www.baidu.com/</span>)</span><br><span class="line">或者</span><br><span class="line"><span class="language-xml">&lt;https://www.baidu.com/&gt;</span></span><br></pre></td></tr></table></figure><p>效果：</p><p><a href="https://www.baidu.com/">百度</a></p><p><a href="https://www.baidu.com/">https://www.baidu.com/</a></p><h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">图片描述可写可不写，但是中括号要有</span>](<span class="link">图片地址，本地链接或者网络地址。</span>)</span><br><span class="line">演示图片（网络地址图片）：</span><br><span class="line">![<span class="string">我的博客背景图片</span>](<span class="link">https://tubed.pages.dev/img/tupian_2.jpg</span>)</span><br></pre></td></tr></table></figure><p>效果：</p><p><img src="/markdown%E4%BD%BF%E7%94%A8.assets/tupian_2.jpg" alt="我的博客背景图片"></p><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>列表分为有序列表和无序列表</p><ul><li>无序列表，使用<code>*</code>、<code>+</code>、<code>-</code>，再加一个空格作为列表的标记</li><li>有序列表，使用数字并加上<code>.</code>号，再加一个空格作为列表的标记</li><li>如果想要控制列表的层级，则需要在列表符号前使用<code>Tab</code></li></ul><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">*</span> 无序列表 1</span><br><span class="line"><span class="bullet">    +</span> 无序列表 2</span><br><span class="line"><span class="bullet">+</span> 无序列表 3</span><br><span class="line"></span><br><span class="line"><span class="bullet">1.</span> 有序列表 1</span><br><span class="line"><span class="bullet">2.</span> 有序列表 2</span><br><span class="line"><span class="bullet">3.</span> 有序列表 3</span><br></pre></td></tr></table></figure><p>效果：</p><ul><li>无序列表 1<ul><li>无序列表 2</li></ul></li></ul><ul><li>无序列表 3</li></ul><ol><li>有序列表 1</li><li>有序列表 2<ol><li>有序列表 2.1</li></ol></li></ol><h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>Markdown中给出了多种分割线的样式，我们可以使用分割线让文章结构更加的清晰。<br>分割线的使用，可以在一行中用三个 <font color=green> <code>-</code> </font> or  <font color=green> <code>*</code></font> 来建立一个分割线，但是注意：在分割线的上面空一行。</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br></pre></td></tr></table></figure><p>效果：</p><hr><hr><h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~这是删除线~~</span><br></pre></td></tr></table></figure><p>效果：</p><p><del>这是删除线</del></p><h2 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;u&gt;这是下划线&lt;/u&gt;</span><br></pre></td></tr></table></figure><p><u>这是下划线</u></p><h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>Markdown中代码块有两种：</p><ul><li>如果在一行内需要引用代码，只需要用反引号 &#96; 引起来就好了。</li><li>如果是在一个块内需要引用代码，则在需要引用的代码块的前一行和后一行使用三个反引号，同时在前一个反引号后写入代码的语言。</li></ul><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">`hello`</span></span><br><span class="line"></span><br><span class="line"><span class="code">```markdown</span></span><br><span class="line"><span class="code">代码.....</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure><p>效果：</p><p>这句中<code>hello</code>是引用</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这是代码块</span><br></pre></td></tr></table></figure><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>表格使用 <font color=green> | </font> 来分割不同的单元格，使用 <font color=green>-</font> 来分隔表头和其他行</p><ul><li><font color=green>:-</font>  将表头及单元格内容左对齐</li><li><font color=green>-:</font>  将表头及单元格内容右对齐</li><li><font color=green>:-:</font> 将表头及单元格内容居中</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|数量|单价|金额|</span><br><span class="line">|:-:|:-|-:|</span><br><span class="line">|10|1|10|</span><br><span class="line">|20|4|80|</span><br></pre></td></tr></table></figure><table><thead><tr><th align="center">数量</th><th align="left">单价</th><th align="right">金额</th></tr></thead><tbody><tr><td align="center">10</td><td align="left">1</td><td align="right">10</td></tr><tr><td align="center">20</td><td align="left">4</td><td align="right">80</td></tr></tbody></table>]]></content>
       
       
+      <categories>
+          
+          <category> 学习记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 记录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>建站过程</title>
+      <link href="/posts/29586a65.html"/>
+      <url>/posts/29586a65.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>网站由Hexo框架+butterfly_V4.5.1主题组成</p><h1 id="网站建设过程"><a href="#网站建设过程" class="headerlink" title="网站建设过程"></a>网站建设过程</h1><ol><li><a href="https://www.fomal.cc/posts/eec9786.html#%E4%B8%80%E5%9B%BE%E6%B5%81%E6%95%99%E7%A8%8B">一图流</a>-<em>完成</em></li><li><a href="https://www.fomal.cc/posts/eec9786.html#%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%AD%94%E6%94%B9">导航栏魔改</a>-<em>完成</em></li><li><a href="https://www.fomal.cc/posts/d1927166.html#%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%AD%94%E6%94%B9%E5%A2%9E%E5%BC%BA%E7%89%88-LYX">导航栏魔改增强版（LYX）</a></li><li><a href="https://zfe.space/post/hexo-magnet.html">首页分类磁贴1.0（小冰）</a>-<em>完成</em></li><li><a href="https://www.fomal.cc/posts/5389e93f.html#Social%E5%8D%A1%E7%89%87%E5%BD%A9%E8%89%B2%E5%9B%BE%E6%A0%87%E5%BC%95%E5%85%A5%EF%BC%88%E5%BA%97%E9%95%BF%EF%BC%89">Social卡片彩色图标引入（店长）</a>-<em>完成</em></li><li><a href="https://github.com/rozbo/hexo-abbrlink">把链接permalink转为数字的插件，生成时自动转为数字。（hexo-abbrlink）</a>-<em>完成</em></li><li><a href="https://www.fomal.cc/posts/5389e93f.html#%E8%8F%9C%E5%8D%95%E6%A0%8F%E5%A4%9A%E8%89%B2%E5%8A%A8%E6%80%81%E5%9B%BE%E6%A0%87%EF%BC%88%E5%BA%97%E9%95%BF%EF%BC%89">菜单栏多色动态图标（店长）</a></li><li><a href="https://www.fomal.cc/posts/5389e93f.html#%E6%96%87%E7%AB%A0%E9%A1%B5%E5%B1%80%E9%83%A8-html-%E4%BB%A3%E7%A0%81%E4%B8%8D%E6%B8%B2%E6%9F%93">文章页局部 html 代码不渲染</a></li><li><a href="https://www.fomal.cc/posts/2d7ac914.html#%E5%8F%B3%E8%BE%B9%E6%8C%89%E9%92%AE%E9%98%85%E8%AF%BB%E8%BF%9B%E5%BA%A6%EF%BC%88Leonus%EF%BC%89">右边按钮阅读进度（Leonus）</a>-<em>完成</em></li><li><a href="https://www.fomal.cc/posts/2d7ac914.html#%E6%8C%89%E9%94%AE%E9%98%B2%E6%8A%96">按键防抖</a></li><li><a href="https://www.fomal.cc/posts/d739261b.html#%E6%9C%AC%E7%AB%99%E5%90%8C%E6%AC%BE%E9%A1%B5%E8%84%9A-tzy%E5%A4%A7%E4%BD%AC-%E5%BE%AE%E8%B0%83">本站同款页脚（tzy大佬+微调）</a>-<em>完成</em></li><li><a href="https://www.fomal.cc/posts/d1927166.html#%E7%BD%91%E7%AB%99%E6%81%B6%E6%90%9E%E6%A0%87%E9%A2%98">网站恶搞标题</a>-<em>完成</em></li><li><a href="https://www.fomal.cc/posts/d1927166.html#Algolia%E6%90%9C%E7%B4%A2%E7%B3%BB%E7%BB%9F">Algolia搜索系统</a></li><li><a href="https://www.fomal.cc/posts/d1927166.html#gulp%E5%8E%8B%E7%BC%A9%E5%85%A8%E5%B1%80%E8%B5%84%E6%BA%90-%E5%BA%97%E9%95%BF">gulp压缩全局资源(店长)</a></li><li><a href="https://www.fomal.cc/posts/d739261b.html">樱花、落叶特效</a>-<em>完成樱花特效</em></li><li><a href="https://anzhiy.cn/posts/dd9.html">使用css节流防止重复点击</a></li><li><a href="https://www.fomal.cc/posts/d739261b.html">自定义右键菜单栏</a></li><li><a href="https://www.fomal.cc/posts/d1927166.html">雪花飘落特效</a></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网站建设 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 记录 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -20,11 +57,44 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/yituliu.css"/>
-      <url>/css/yituliu.css</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: transparent !important;  }  #page-header {    background: transparent !important;  }  /* 白天模式遮罩透明 */  #footer::before {    background: transparent !important;  }  #page-header::before {    background: transparent !important;  }  /* 夜间模式遮罩透明 */  [data-theme="dark"] #footer::before {    background: transparent !important;  }  [data-theme="dark"] #page-header::before {    background: transparent !important;  }]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>动漫</title>
+      <link href="/dongman/index.html"/>
+      <url>/dongman/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/readPercent.css"/>
+      <url>/css/readPercent.css</url>
+      
+        <content type="html"><![CDATA[/* 返回顶部 */button#go-up #percent {    display: none;    font-weight: bold;    font-size: 15px !important;}button#go-up span {    font-size: 12px!important;    margin-right: -1px;}/* 鼠标滑动到按钮上时显示返回顶部图标 */button#go-up:hover i {    display: block !important;}button#go-up:hover #percent {    display: none !important;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/custom.css"/>
+      <url>/css/custom.css</url>
+      
+        <content type="html"><![CDATA[/* ---------------------------------------------------------- */svg.icon {  width: 1.28em;  height: 1.28em;  vertical-align: -0.15em;  fill: currentColor;  overflow: hidden;}/* ---------------------------------------------------------- *//* 页脚与头图透明 */#footer {    background: transparent !important;}#page-header {    background: transparent !important;}/* 白天模式遮罩透明 */#footer::before {    background: transparent !important;}/* 夜间模式遮罩透明 */[data-theme="dark"] #footer::before {    background: transparent !important;}[data-theme="dark"] #page-header::before {    background: transparent !important;}/* ---------------------------------------------------------- *//* Social卡片彩色图标引入（店长）修改了class名=social_icon */svg.social_icon {  width: 1.20em;  height: 1.20em;  vertical-align: -0.15em;  fill: currentColor;  overflow: hidden;}/* ---------------------------------------------------------- *//* tzy页脚样式 */#footer{  background-color: rgba(0,0,0,0.3) !important;}#footer-wrap{  padding:20px 40px;}/* ---------------------------------------------------------- *//* 菜单居中 */#nav .menus_items {  position: absolute !important;  width: fit-content !important;  left: 50% !important;  transform: translateX(-50%) !important;}/* 顶栏常驻 */.nav-fixed #nav{  transform: translateY(58px)!important;  -webkit-transform: translateY(58px)!important;  -moz-transform: translateY(58px)!important;  -ms-transform: translateY(58px)!important;  -o-transform: translateY(58px)!important;}#nav{  transition: none!important;  -webkit-transition: none!important;  -moz-transition: none!important;  -ms-transition: none!important;  -o-transition: none!important;}/* ---------------------------------------------------------- *//* 滚动条样式 */::-webkit-scrollbar {  width: 8px;  height: 8px;}::-webkit-scrollbar-track {  background-color: rgba(73, 177, 245, 0.2);  border-radius: 2em;}::-webkit-scrollbar-thumb {  background-color: var(--theme-color);  background-image: -webkit-linear-gradient(    45deg,    rgba(255, 255, 255, 0.4) 25%,    transparent 25%,    transparent 50%,    rgba(255, 255, 255, 0.4) 50%,    rgba(255, 255, 255, 0.4) 75%,    transparent 75%,    transparent  );  border-radius: 2em;}::-webkit-scrollbar-corner {  background-color: transparent;}::-moz-selection {  color: #fff;  background-color: var(--theme-color);}]]></content>
       
     </entry>
     
@@ -34,6 +104,72 @@
       <title>关于</title>
       <link href="/heart/index.html"/>
       <url>/heart/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/title.js"/>
+      <url>/js/title.js</url>
+      
+        <content type="html"><![CDATA[//动态标题var OriginTitile = document.title;var titleTime;document.addEventListener('visibilitychange', function () {  if (document.hidden) {    //离开当前页面时标签显示内容    document.title = '🏃🏻‍♂️💨记得回来哦';    clearTimeout(titleTime);  } else {    //返回当前页面时标签显示内容    document.title = '🌊欢迎回来！';    //两秒后变回正常标题    titleTime = setTimeout(function () {      document.title = OriginTitile;    }, 2000);  }});]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/nav.js"/>
+      <url>/js/nav.js</url>
+      
+        <content type="html"><![CDATA[document.addEventListener('pjax:complete', tonav);document.addEventListener('DOMContentLoaded', tonav);//响应pjaxfunction tonav() {    document.getElementById("name-container").setAttribute("style", "display:none");    var position = $(window).scrollTop();    $(window).scroll(function () {        var scroll = $(window).scrollTop();        if (scroll > position) {            document.getElementById("name-container").setAttribute("style", "");            document.getElementsByClassName("menus_items")[1].setAttribute("style", "display:none!important");        } else {            document.getElementsByClassName("menus_items")[1].setAttribute("style", "");            document.getElementById("name-container").setAttribute("style", "display:none");        }        position = scroll;    });    //修复没有弄右键菜单的童鞋无法回顶部的问题    document.getElementById("page-name").innerText = document.title.split(" | Fomalhaut🥝")[0];}function scrollToTop() {    document.getElementsByClassName("menus_items")[1].setAttribute("style", "");    document.getElementById("name-container").setAttribute("style", "display:none");    btf.scrollToDest(0, 500);}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/readPercent.js"/>
+      <url>/js/readPercent.js</url>
+      
+        <content type="html"><![CDATA[window.onscroll = percent;// 执行函数// 页面百分比function percent() {    let a = document.documentElement.scrollTop || window.pageYOffset, // 卷去高度        b = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight, document.body.offsetHeight, document.documentElement.offsetHeight, document.body.clientHeight, document.documentElement.clientHeight) - document.documentElement.clientHeight, // 整个网页高度        result = Math.round(a / b * 100), // 计算百分比        up = document.querySelector("#go-up") // 获取按钮    if (result <= 95) {        up.childNodes[0].style.display = 'none'        up.childNodes[1].style.display = 'block'        up.childNodes[1].innerHTML = result+"<span>%</span>";    } else {        up.childNodes[1].style.display = 'none'        up.childNodes[0].style.display = 'block'    }}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/runtime.js"/>
+      <url>/js/runtime.js</url>
+      
+        <content type="html"><![CDATA[var now = new Date();function createtime() {  now.setTime(now.getTime() + 1000);    // 当前时间  var grt = new Date("12/04/2022 00:00:00");// 网站创建时间  var days = (now - grt) / 1e3 / 60 / 60 / 24,    dnum = Math.floor(days),    hours = (now - grt) / 1e3 / 60 / 60 - 24 * dnum,    hnum = Math.floor(hours);  1 == String(hnum).length && (hnum = "0" + hnum);  var minutes = (now - grt) / 1e3 / 60 - 1440 * dnum - 60 * hnum,    mnum = Math.floor(minutes);  1 == String(mnum).length && (mnum = "0" + mnum);  var seconds = (now - grt) / 1e3 - 86400 * dnum - 3600 * hnum - 60 * mnum,    snum = Math.round(seconds);  1 == String(snum).length && (snum = "0" + snum);  let currentTimeHtml = "";  (currentTimeHtml =    hnum < 18 && hnum >= 9    ? `<div style="font-size:13px;font-weight:bold">小站陪我在这个世界过了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 </div>`    : `<div style="font-size:13px;font-weight:bold">小站陪我在这个世界过了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 </div>`),    document.getElementById("workboard") &&    (document.getElementById("workboard").innerHTML = currentTimeHtml);}// 设置重复执行函数，周期1000mssetInterval(() => {  createtime();}, 1000);]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -53,31 +189,9 @@
     
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>link</title>
+      <title>友链</title>
       <link href="/link/index.html"/>
       <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>音乐</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
